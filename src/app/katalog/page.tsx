@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function KatalogTanam() {
@@ -34,9 +35,16 @@ export default function KatalogTanam() {
           {/* Kartu Aeroponik */}
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-slate-100">
             {/* Area kosong untuk simulasi gambar/ilustrasi menara aeroponik */}
-            <div className="h-48 bg-emerald-100 flex items-center justify-center">
+            <Image
+              src="https://www.farminghydroponics.com/wp-content/uploads/2025/01/Aeroponics-System.jpg" // Pastikan ada gambar ini di folder 'public'
+              alt="Sistem Aeroponik"
+              width={500} 
+              height={300}
+              className="rounded-lg object-cover"
+            />
+            {/* <div className="h-48 bg-emerald-100 flex items-center justify-center">
               <span className="text-emerald-500 font-bold text-xl">[Ilustrasi Tower Aeroponik]</span>
-            </div>
+            </div> */}
             <div className="p-6">
               <h3 className="text-2xl font-bold mb-2 text-emerald-700">Sistem Aeroponik</h3>
               <p className="text-slate-600 mb-4 line-clamp-3">

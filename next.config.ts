@@ -5,4 +5,11 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
 };
 
+module.exports = {
+  images: {
+    domains: ['www.farminghydroponics.com'], // Replace with your image host domain
+  },
+};
+
+
 export default nextConfig;
